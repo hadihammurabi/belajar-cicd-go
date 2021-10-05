@@ -1,7 +1,7 @@
 package main
 
 import (
-	"belajar-docker/route"
+	"simple-go/route"
 
 	"github.com/labstack/echo/v4"
 )
