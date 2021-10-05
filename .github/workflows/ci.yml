@@ -44,5 +44,5 @@ jobs:
           script: |
             docker pull hadihammurabi/simple-go; \
             docker rm -f simple_go; \
-            docker run -d -p 8080:8080 --name simple_go hadihammurabi/simple-go
+            docker run -d --network host --name simple_go hadihammurabi/simple-go
   
