@@ -15,7 +15,7 @@ func NewRoute(e *echo.Echo) {
 	e.GET("/", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, response{
 			Message: "success",
-			Data:    "halo epribadeh!",
+			Data:    "halo epriwan!",
 		})
 	})
 }
