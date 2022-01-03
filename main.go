@@ -1,8 +1,8 @@
 package main
 
 import (
-	"simple-go/config"
-	"simple-go/route"
+// 	"simple-go/config"
+// 	"simple-go/route"
 
 	"github.com/labstack/echo/v4"
 )
