@@ -8,10 +8,16 @@ import (
 )
 
 func main() {
-	config.InitDB()
+// 	config.InitDB()
 
 	e := echo.New()
+	e.GET("/", func(c echo.Context) error {
+		return c.JSON(http.StatusOK, response{
+			Message: "success",
+			Data:    "halo epriwan!",
+		})
+	})
 
-	route.NewRoute(e)
+// 	route.NewRoute(e)
 	panic(e.Start(":8080"))
 }
